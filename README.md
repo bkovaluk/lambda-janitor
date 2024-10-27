@@ -1,4 +1,4 @@
-# Lambda Cleanup
+# Lambda Janitor
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -25,8 +25,8 @@ A Python package that automates the cleanup of old, unused AWS Lambda versions. 
 ### Clone the Repository
 
 ~~~bash
-git clone https://github.com/yourusername/lambda-cleanup.git
-cd lambda-cleanup
+git clone https://github.com/yourusername/lambda-janitor.git
+cd lambda-janitor
 ~~~
 
 ### Install Dependencies
@@ -50,7 +50,7 @@ This package is designed to be deployed as an AWS Lambda function, but you can t
 ### Running the Cleanup Script
 
 ~~~bash
-uv run src/lambda_cleanup/cleanup.py
+uv run lambda_janitor/main.py
 ~~~
 
 ### Running Tests
@@ -84,19 +84,18 @@ export EMAIL_SENDER="notify@example.com"
 ### Project Structure
 
 ~~~plaintext
-lambda_cleanup/
-├── src/
-│   └── lambda_cleanup/
-│       ├── __init__.py
-│       └── cleanup.py
+lambda_janitor/
+├── lambda_janitor/
+│   └── main.py
+│   └── __init__.py
 ├── tests/
-│   └── test_cleanup.py
+│   └── test_janitor.py
 ├── pyproject.toml
 └── README.md
 ~~~
 
-- **`src/lambda_cleanup/cleanup.py`**: Contains the main logic for identifying, deleting, and notifying about unused Lambda versions.
-- **`tests/test_cleanup.py`**: Test cases for unit testing the cleanup functionality.
+- **`lambda_janitor/main.py`**: Contains the main logic for identifying, deleting, and notifying about unused Lambda versions.
+- **`tests/test_janitor.py`**: Test cases for unit testing the cleanup functionality.
 
 ### Adding New Dependencies
 
