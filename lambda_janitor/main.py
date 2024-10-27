@@ -20,8 +20,8 @@ Usage:
 """
 
 __author__ = "Bradley Kovaluk"
-__version__ = "1.5"
-__date__ = "2024-01-15"
+__version__ = "1.0"
+__date__ = "2024-10-25"
 
 import boto3
 import os
