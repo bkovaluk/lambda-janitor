@@ -1,0 +1,17 @@
+[project]
+name = "lambda_janitor"
+version = "0.1.0"
+description = "A Lambda function package to clean up old, unused Lambda versions and notify via SES."
+authors = ["Bradley Kovaluk <bkovaluk@gmail.com>"]
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.uv]
+dev-dependencies = [
+    "boto3>=1.35.49",
+    "coverage>=7.6.4",
+    "moto>=5.0.18",
+    "pytest>=8.3.3",
+    "ruff>=0.7.1",
+]
+

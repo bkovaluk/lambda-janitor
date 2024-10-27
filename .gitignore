@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# hatch, uv, poetry virtual env
+.hatch/
+.uv/
+
+# Package directories
+build/
+dist/
+*.egg-info/
+
+# Test-related files
+.tox/
+coverage/
+.cache
+.pytest_cache/
+.coverage
+
+# Hatch and uv lock files
+hatch.lock
+uv.lock
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
